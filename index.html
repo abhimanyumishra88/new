@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: bisque;
+        }
+        nav{
+            height: 63px;
+            background-color: rgb(1, 16, 37);
+            color: rgb(255, 255, 255);
+        }
+        .logo{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 3.5rem;
+            margin: 0 30PX;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 30px;
+           
+        }
+        nav ul li{
+            margin: 0 23px;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .container{
+            height: 521px;
+            flex-direction: row;
+        }
+        .box1{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        }
+        .box2{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(ll.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        }
+        .box3{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(kk.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        }
+        .box4{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(jj.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        }
+        .box5{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(ss.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        }
+        .box6{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(gg.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+        }
+        .box7{
+            height: 247px;
+            width: 134px;
+            background-color: white;
+            background-image: url(ff.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        }
+        .box8{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(dd.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            }
+        .box9{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(q1.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            }
+        .box10{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(q2.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            }
+        .box1q{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(q3.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            }
+        .box2q{
+            height: 247px;
+            width: 250px;
+            background-color: white;
+            background-image: url(q4.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            }
+        .box3q{
+            height: 247px;
+            width: 291px;
+            background-color: white;
+            background-image: url(q5.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+            }
+        .box11{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(bbb.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        }
+        .box12{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(ccc.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        }
+        .box13{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(mmm.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        }
+        .box14{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(vvv.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        }
+        .box15{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(xxx.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        
+        }
+        .boy{
+            background-color: white;
+        }
+        .girl{
+            height:320px ;
+        }
+        .box16{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(hhh.pnh.jpg);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        
+        }
+        .box17{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(ggg.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        
+        }
+        .box18{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(sss.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        
+        }
+        .box19{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aaa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        
+        }
+        .box20{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(kkk.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+            margin:15px 15px;
+        } 
+
+         .box21{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box22{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box23{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box24{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box25{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box26{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box27{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box28{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box29{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+        } .box30{
+            height: 247px;
+            width: 200px;
+            background-color: white;
+            background-image: url(aa.png);
+            background-size: cover;
+            border-style: solid;
+            border-color: white;
+            display: inline-block;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                amazon
+              </div>   
+            <ul>
+                <li><a href="">Home</li></a>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact us</a></li>
+                <input type="text" placeholder="Search for item">
+                <button>Search</button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box1">a</div>
+            <div class="box2">b</div>
+            <div class="box3">c</div>
+            <div class="box4">d</div>
+            <div class="box5">e</div>
+            <div class="box6">f</div>
+            <div class="box7">g</div>
+            <div class="box8">h</div>
+            <div class="box9">h</div>
+            <div class="box10">h</div>
+            <div class="box1q">h</div>
+            <div class="box2q">h</div>
+            <div class="box3q">h</div>
+            <br>
+            <br>
+          
+              <div class="boy">
+            <h1>Min. 50% off | Unique home finds | Amazon Brands & more</h1>
+            <div class="box11"></div>
+            <div class="box12"></div>
+            <div class="box13"></div>
+            <div class="box14"></div>
+            <div class="box15"></div>
+        </div>
+        <br><br>  
+         <div class="container">
+            <div class="box21">a</div>
+            <div class="box22">b</div>
+            <div class="box23">c</div>
+            <div class="box24">d</div>
+            <div class="box25">e</div>
+            <div class="box26">f</div>
+            <div class="box27">g</div>
+            <div class="box28">h</div>
+            <div class="box29">h</div>
+            <div class="box30">h</div>
+            <br>
+            <br>
+              <div class="girl">
+            <h1>Starting ₹70,348 | Ride into your next adventure</h1>
+            <div class="box16"></div>
+            <div class="box17"></div>
+            <div class="box18"></div>
+            <div class="box19"></div>
+            <div class="box20"></div>
+        </div>
+        </div>
+      
+    </main>
+</body>
+</html>
